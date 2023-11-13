@@ -9,5 +9,8 @@ package MiniProyecto3;
  * @author El Rey
  */
 public class Principal {
+    public static void main(String[] args) {
     
+    
+    }
 }

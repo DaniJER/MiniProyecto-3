@@ -11,4 +11,5 @@
         <maven.compiler.target>19</maven.compiler.target>
         <exec.mainClass>com.mycompany.ejemplocollections.EjemploCollections</exec.mainClass>
     </properties>
+    <name>MiniProyecto3</name>
 </project>

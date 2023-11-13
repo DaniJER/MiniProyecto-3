@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package MiniProyecto3;
+package Model;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -13,7 +13,7 @@ import java.util.Set;
  */
 public class CuentasUsuarios {
     
-    public static void main(String[] args) {
+    
         DefaultUser cl1 = new DefaultUser("Daniel", "001", 2000);
         DefaultUser cl2 = new DefaultUser("Jose", "002", 3000);
         DefaultUser cl3 = new DefaultUser("Enrique", "003", 4000);
