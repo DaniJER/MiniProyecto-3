@@ -31,7 +31,7 @@ public class PrincipalView extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        listarButton = new javax.swing.JButton();
         Agregar = new javax.swing.JButton();
         actualizar = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -64,7 +64,6 @@ public class PrincipalView extends javax.swing.JFrame {
 
         jTextField1.setBackground(new java.awt.Color(195, 195, 195));
         jTextField1.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField1.setText("Bienvenido");
         jTextField1.setBorder(null);
@@ -78,7 +77,6 @@ public class PrincipalView extends javax.swing.JFrame {
 
         jTextField2.setBackground(new java.awt.Color(195, 195, 195));
         jTextField2.setFont(new java.awt.Font("Arial", 1, 40)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
         jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField2.setText("Universidad del valle");
         jTextField2.setBorder(null);
@@ -90,25 +88,23 @@ public class PrincipalView extends javax.swing.JFrame {
         jPanel1.add(jTextField2);
         jTextField2.setBounds(260, 30, 420, 70);
 
-        jButton1.setBackground(new java.awt.Color(131, 131, 131));
-        jButton1.setFont(new java.awt.Font("Arial", 0, 32)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Listar");
-        jButton1.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 0, 0), java.awt.Color.black));
-        jButton1.setMaximumSize(new java.awt.Dimension(170, 75));
-        jButton1.setMinimumSize(new java.awt.Dimension(170, 75));
-        jButton1.setPreferredSize(new java.awt.Dimension(170, 75));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        listarButton.setBackground(new java.awt.Color(131, 131, 131));
+        listarButton.setFont(new java.awt.Font("Arial", 0, 32)); // NOI18N
+        listarButton.setText("Listar");
+        listarButton.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(0, 0, 0), java.awt.Color.black));
+        listarButton.setMaximumSize(new java.awt.Dimension(170, 75));
+        listarButton.setMinimumSize(new java.awt.Dimension(170, 75));
+        listarButton.setPreferredSize(new java.awt.Dimension(170, 75));
+        listarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                listarButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1);
-        jButton1.setBounds(480, 340, 170, 75);
+        jPanel1.add(listarButton);
+        listarButton.setBounds(480, 340, 170, 75);
 
         Agregar.setBackground(new java.awt.Color(131, 131, 131));
         Agregar.setFont(new java.awt.Font("Arial", 0, 32)); // NOI18N
-        Agregar.setForeground(new java.awt.Color(0, 0, 0));
         Agregar.setText("Agregar");
         Agregar.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, new java.awt.Color(0, 0, 0), java.awt.Color.black));
         Agregar.setMaximumSize(new java.awt.Dimension(170, 75));
@@ -124,7 +120,6 @@ public class PrincipalView extends javax.swing.JFrame {
 
         actualizar.setBackground(new java.awt.Color(131, 131, 131));
         actualizar.setFont(new java.awt.Font("Arial", 0, 32)); // NOI18N
-        actualizar.setForeground(new java.awt.Color(0, 0, 0));
         actualizar.setText("Actualizar");
         actualizar.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, new java.awt.Color(0, 0, 0), java.awt.Color.black));
         actualizar.setMaximumSize(new java.awt.Dimension(170, 75));
@@ -140,7 +135,6 @@ public class PrincipalView extends javax.swing.JFrame {
 
         jButton4.setBackground(new java.awt.Color(131, 131, 131));
         jButton4.setFont(new java.awt.Font("Arial", 0, 32)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(0, 0, 0));
         jButton4.setText("Eliminar");
         jButton4.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, new java.awt.Color(0, 0, 0), java.awt.Color.black));
         jButton4.setMaximumSize(new java.awt.Dimension(170, 75));
@@ -156,7 +150,6 @@ public class PrincipalView extends javax.swing.JFrame {
 
         jTextField3.setBackground(new java.awt.Color(196, 196, 196));
         jTextField3.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
         jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField3.setText("Developed by jviedman dev - enriquez dev");
         jTextField3.setBorder(null);
@@ -185,9 +178,9 @@ public class PrincipalView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void listarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listarButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_listarButtonActionPerformed
 
     private void AgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgregarActionPerformed
         // TODO add your handling code here:
@@ -237,15 +230,15 @@ public class PrincipalView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Agregar;
-    private javax.swing.JButton actualizar;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton4;
+    public javax.swing.JButton Agregar;
+    public javax.swing.JButton actualizar;
+    public javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
+    public javax.swing.JButton listarButton;
     // End of variables declaration//GEN-END:variables
 }

@@ -4,13 +4,16 @@
  */
 package MiniProyecto3;
 
+import Controller.PrincipalController;
+import View.PrincipalView;
+
 /**
  *
  * @author El Rey
  */
 public class Principal {
     public static void main(String[] args) {
-    
-    
+    PrincipalView ventanaPrincipal = new PrincipalView();
+    PrincipalController controladorPrincipal = new PrincipalController(ventanaPrincipal);
     }
 }
