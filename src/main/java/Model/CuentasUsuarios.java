@@ -15,10 +15,11 @@ public class CuentasUsuarios {
     
         //Creando usuarios con datos ya cargados en el sistema
         DefaultUser p1 = new DefaultUser("Daniel", "jose", "Enriquez","Rangel", "cra 34", 32600384, "Estudiante", "19 junio", 107 );
-        
         DefaultUser p2 = new DefaultUser("Daniel", "jose", "Enriquez","Rangel", "cra 34", 32600384, "Estudiante","19 junio", 107 );
         
-        Set <DefaultUser> clientesBanco = new HashSet<>();
+        
+        //Set <DefaultUser> usuarios = new HashSet<>();
+        
         
         //Agregando los objetos de tipo cliente
 
