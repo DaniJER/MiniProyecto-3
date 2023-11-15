@@ -28,16 +28,27 @@ public class CreateView extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        jTextField7 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
         jTextField8 = new javax.swing.JTextField();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
         jTextField9 = new javax.swing.JTextField();
+        jTextField10 = new javax.swing.JTextField();
+        jTextField11 = new javax.swing.JTextField();
+        jTextField12 = new javax.swing.JTextField();
+        jTextField13 = new javax.swing.JTextField();
+        jTextField14 = new javax.swing.JTextField();
+        jTextField15 = new javax.swing.JTextField();
+        jTextField16 = new javax.swing.JTextField();
+        jTextField17 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(950, 600));
         getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(196, 196, 196));
@@ -52,56 +63,294 @@ public class CreateView extends javax.swing.JFrame {
         jTextField1.setMinimumSize(new java.awt.Dimension(0, 0));
         jTextField1.setPreferredSize(new java.awt.Dimension(0, 0));
         jPanel1.add(jTextField1);
-        jTextField1.setBounds(238, 40, 470, 100);
+        jTextField1.setBounds(260, 50, 470, 100);
 
-        jTextField2.setText("jTextField2");
-        jPanel1.add(jTextField2);
-        jTextField2.setBounds(480, 360, 71, 22);
-
-        jTextField3.setBackground(new java.awt.Color(196, 196, 196));
-        jTextField3.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField3.setText("Tipo de usuario");
-        jTextField3.setAlignmentX(0.0F);
-        jTextField3.setBorder(null);
-        jTextField3.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        jTextField3.setMaximumSize(new java.awt.Dimension(0, 0));
-        jTextField3.setMinimumSize(new java.awt.Dimension(0, 0));
-        jTextField3.setName(""); // NOI18N
-        jTextField3.setPreferredSize(new java.awt.Dimension(0, 0));
-        jPanel1.add(jTextField3);
-        jTextField3.setBounds(60, 190, 180, 54);
-
-        jTextField4.setText("jTextField2");
-        jPanel1.add(jTextField4);
-        jTextField4.setBounds(70, 220, 71, 22);
-
-        jTextField5.setText("jTextField2");
-        jPanel1.add(jTextField5);
-        jTextField5.setBounds(70, 280, 71, 22);
-
-        jTextField6.setText("jTextField2");
-        jPanel1.add(jTextField6);
-        jTextField6.setBounds(60, 370, 71, 22);
-
-        jTextField7.setText("jTextField2");
+        jTextField7.setBackground(new java.awt.Color(196, 196, 196));
+        jTextField7.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jTextField7.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField7.setText("Fecha de nacimiento");
+        jTextField7.setAlignmentX(0.0F);
+        jTextField7.setBorder(null);
+        jTextField7.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        jTextField7.setMaximumSize(new java.awt.Dimension(0, 0));
+        jTextField7.setMinimumSize(new java.awt.Dimension(0, 0));
+        jTextField7.setName(""); // NOI18N
+        jTextField7.setPreferredSize(new java.awt.Dimension(0, 0));
         jPanel1.add(jTextField7);
-        jTextField7.setBounds(470, 150, 71, 22);
+        jTextField7.setBounds(60, 380, 190, 54);
 
-        jTextField8.setText("jTextField2");
+        jTextField4.setBackground(new java.awt.Color(196, 196, 196));
+        jTextField4.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField4.setText("Nombre");
+        jTextField4.setAlignmentX(0.0F);
+        jTextField4.setBorder(null);
+        jTextField4.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        jTextField4.setMaximumSize(new java.awt.Dimension(0, 0));
+        jTextField4.setMinimumSize(new java.awt.Dimension(0, 0));
+        jTextField4.setName(""); // NOI18N
+        jTextField4.setPreferredSize(new java.awt.Dimension(0, 0));
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField4);
+        jTextField4.setBounds(60, 260, 100, 40);
+
+        jTextField5.setBackground(new java.awt.Color(196, 196, 196));
+        jTextField5.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField5.setText("Telefono");
+        jTextField5.setAlignmentX(0.0F);
+        jTextField5.setBorder(null);
+        jTextField5.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        jTextField5.setMaximumSize(new java.awt.Dimension(0, 0));
+        jTextField5.setMinimumSize(new java.awt.Dimension(0, 0));
+        jTextField5.setName(""); // NOI18N
+        jTextField5.setPreferredSize(new java.awt.Dimension(0, 0));
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField5);
+        jTextField5.setBounds(510, 260, 110, 40);
+
+        jTextField8.setBackground(new java.awt.Color(196, 196, 196));
+        jTextField8.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jTextField8.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField8.setText("Tipo de telefono");
+        jTextField8.setAlignmentX(0.0F);
+        jTextField8.setBorder(null);
+        jTextField8.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        jTextField8.setMaximumSize(new java.awt.Dimension(0, 0));
+        jTextField8.setMinimumSize(new java.awt.Dimension(0, 0));
+        jTextField8.setName(""); // NOI18N
+        jTextField8.setPreferredSize(new java.awt.Dimension(0, 0));
         jPanel1.add(jTextField8);
-        jTextField8.setBounds(470, 200, 71, 22);
+        jTextField8.setBounds(500, 190, 200, 54);
 
-        jTextField9.setText("jTextField2");
+        jComboBox1.setBackground(new java.awt.Color(255, 255, 255));
+        jComboBox1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jComboBox1.setForeground(new java.awt.Color(0, 0, 0));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Estudiante", "profesor", "empleado" }));
+        jComboBox1.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
+        jComboBox1.setMaximumSize(new java.awt.Dimension(0, 0));
+        jComboBox1.setMinimumSize(new java.awt.Dimension(0, 0));
+        jComboBox1.setPreferredSize(new java.awt.Dimension(0, 0));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jComboBox1);
+        jComboBox1.setBounds(280, 200, 175, 40);
+
+        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField2.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
+        jTextField2.setMinimumSize(new java.awt.Dimension(0, 0));
+        jTextField2.setPreferredSize(new java.awt.Dimension(0, 0));
+        jTextField2.setRequestFocusEnabled(false);
+        jPanel1.add(jTextField2);
+        jTextField2.setBounds(280, 380, 175, 40);
+
+        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField3.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
+        jTextField3.setMinimumSize(new java.awt.Dimension(0, 0));
+        jTextField3.setPreferredSize(new java.awt.Dimension(0, 0));
+        jTextField3.setRequestFocusEnabled(false);
+        jPanel1.add(jTextField3);
+        jTextField3.setBounds(720, 310, 175, 40);
+
+        jTextField6.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTextField6.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField6.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
+        jTextField6.setMinimumSize(new java.awt.Dimension(0, 0));
+        jTextField6.setPreferredSize(new java.awt.Dimension(0, 0));
+        jTextField6.setRequestFocusEnabled(false);
+        jPanel1.add(jTextField6);
+        jTextField6.setBounds(280, 320, 175, 40);
+
+        jTextField9.setBackground(new java.awt.Color(196, 196, 196));
+        jTextField9.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jTextField9.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField9.setText("Tipo de usuario");
+        jTextField9.setAlignmentX(0.0F);
+        jTextField9.setBorder(null);
+        jTextField9.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        jTextField9.setMaximumSize(new java.awt.Dimension(0, 0));
+        jTextField9.setMinimumSize(new java.awt.Dimension(0, 0));
+        jTextField9.setName(""); // NOI18N
+        jTextField9.setPreferredSize(new java.awt.Dimension(0, 0));
         jPanel1.add(jTextField9);
-        jTextField9.setBounds(470, 240, 71, 22);
+        jTextField9.setBounds(60, 190, 180, 54);
+
+        jTextField10.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField10.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTextField10.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField10.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
+        jTextField10.setMinimumSize(new java.awt.Dimension(0, 0));
+        jTextField10.setPreferredSize(new java.awt.Dimension(0, 0));
+        jTextField10.setRequestFocusEnabled(false);
+        jPanel1.add(jTextField10);
+        jTextField10.setBounds(280, 270, 175, 40);
+
+        jTextField11.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField11.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTextField11.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField11.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
+        jTextField11.setMinimumSize(new java.awt.Dimension(0, 0));
+        jTextField11.setPreferredSize(new java.awt.Dimension(0, 0));
+        jTextField11.setRequestFocusEnabled(false);
+        jPanel1.add(jTextField11);
+        jTextField11.setBounds(720, 200, 175, 40);
+
+        jTextField12.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField12.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTextField12.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField12.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
+        jTextField12.setMinimumSize(new java.awt.Dimension(0, 0));
+        jTextField12.setPreferredSize(new java.awt.Dimension(0, 0));
+        jTextField12.setRequestFocusEnabled(false);
+        jPanel1.add(jTextField12);
+        jTextField12.setBounds(720, 260, 175, 40);
+
+        jTextField13.setBackground(new java.awt.Color(255, 255, 255));
+        jTextField13.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jTextField13.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField13.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
+        jTextField13.setMinimumSize(new java.awt.Dimension(0, 0));
+        jTextField13.setPreferredSize(new java.awt.Dimension(0, 0));
+        jTextField13.setRequestFocusEnabled(false);
+        jPanel1.add(jTextField13);
+        jTextField13.setBounds(720, 380, 175, 40);
+
+        jTextField14.setBackground(new java.awt.Color(196, 196, 196));
+        jTextField14.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jTextField14.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField14.setText("Direccion");
+        jTextField14.setAlignmentX(0.0F);
+        jTextField14.setBorder(null);
+        jTextField14.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        jTextField14.setMaximumSize(new java.awt.Dimension(0, 0));
+        jTextField14.setMinimumSize(new java.awt.Dimension(0, 0));
+        jTextField14.setName(""); // NOI18N
+        jTextField14.setPreferredSize(new java.awt.Dimension(0, 0));
+        jTextField14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField14ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField14);
+        jTextField14.setBounds(510, 320, 120, 40);
+
+        jTextField15.setBackground(new java.awt.Color(196, 196, 196));
+        jTextField15.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jTextField15.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField15.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField15.setText("Numero de identificacion");
+        jTextField15.setAlignmentX(0.0F);
+        jTextField15.setBorder(null);
+        jTextField15.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        jTextField15.setMaximumSize(new java.awt.Dimension(0, 0));
+        jTextField15.setMinimumSize(new java.awt.Dimension(0, 0));
+        jTextField15.setName(""); // NOI18N
+        jTextField15.setPreferredSize(new java.awt.Dimension(0, 0));
+        jTextField15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField15ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField15);
+        jTextField15.setBounds(510, 380, 180, 40);
+
+        jTextField16.setBackground(new java.awt.Color(196, 196, 196));
+        jTextField16.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jTextField16.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField16.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField16.setText("Apellido");
+        jTextField16.setAlignmentX(0.0F);
+        jTextField16.setBorder(null);
+        jTextField16.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        jTextField16.setMaximumSize(new java.awt.Dimension(0, 0));
+        jTextField16.setMinimumSize(new java.awt.Dimension(0, 0));
+        jTextField16.setName(""); // NOI18N
+        jTextField16.setPreferredSize(new java.awt.Dimension(0, 0));
+        jTextField16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField16ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField16);
+        jTextField16.setBounds(60, 320, 100, 40);
+
+        jTextField17.setBackground(new java.awt.Color(196, 196, 196));
+        jTextField17.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jTextField17.setForeground(new java.awt.Color(0, 0, 0));
+        jTextField17.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField17.setText("Developed by jviedman dev - enriquez dev");
+        jTextField17.setBorder(null);
+        jPanel1.add(jTextField17);
+        jTextField17.setBounds(211, 540, 520, 19);
+
+        jButton1.setBackground(new java.awt.Color(131, 131, 131));
+        jButton1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jButton1.setText("Enviar");
+        jButton1.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1);
+        jButton1.setBounds(400, 460, 170, 60);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 950, 600);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField14ActionPerformed
+
+    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField15ActionPerformed
+
+    private void jTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField16ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -139,8 +388,18 @@ public class CreateView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
