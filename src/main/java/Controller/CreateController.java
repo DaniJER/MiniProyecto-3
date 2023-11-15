@@ -4,10 +4,39 @@
  */
 package Controller;
 
+import View.*;
+import Model.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author El Rey
  */
-public class CreateController {
+public class CreateController implements ActionListener {
+    
+    private PrincipalView vistaPrincipal;
+    private Create createModel;
+    private CreateView vistaCrear;
+
+    public CreateController(PrincipalView vistaPrincipal) {
+        this.vistaPrincipal = vistaPrincipal;
+        vistaPrincipal.Agregar.addActionListener(this);
+    }
+    public void iniciarVistaCrear(){
+        vistaCrear.setTitle("Agregar Usuarios");
+        vistaCrear.setLocationRelativeTo(null);
+        
+    }
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        createModel.setNombre(vistaCrear.campoNombre.getText());
+        createModel.setApellido(vistaCrear.campoApellido.getText());
+        createModel.setDireccion(vistaCrear.campoDireccion.getText());
+        createModel.setCelular(Integer.parseInt(vistaCrear.campoCelular.getText()));
+        createModel.setId(Integer.parseInt(vistaCrear.campoId.getText()));
+        createModel.setNacimiento(vistaCrear.campoNacimiento.getText());
+        //createModel.setNombre(vistaCrear.tipoUsuarioComboBox.getText());
+    }
     
 }
