@@ -14,18 +14,21 @@ import java.awt.event.ActionListener;
  * @author El Rey
  */
 public class CreateController implements ActionListener {
-    
+    //Crear variables de tipo clase
     private PrincipalView vistaPrincipal;
     private Create createModel;
     private CreateView vistaCrear;
-
+    
+    //Metodo contructor
     public CreateController(PrincipalView vistaPrincipal, Create createModel, CreateView vistaCrear) {
         this.vistaPrincipal = vistaPrincipal;
         this.createModel = createModel;
         this.vistaCrear = vistaCrear;
-        vistaPrincipal.Agregar.addActionListener(this);
+        //llamar el boton de la vista y añadirle el metodo ActionListener
+        vistaPrincipal.Agregar.addActionListener(this); 
     }
-    public void iniciarVistaCrear(){
+    //Metodo que inicia la vista y establece los titulos y las dimensiones de las ventanas
+    public void iniciarPrograma(){
         vistaPrincipal.setTitle("Gestion de usuarios");
         vistaPrincipal.setLocationRelativeTo(null);
         vistaCrear.setTitle("Agregar Usuarios");
@@ -41,6 +44,7 @@ public class CreateController implements ActionListener {
         vistaCrear.setSize(vistaPrincipal.getWidth(), vistaPrincipal.getHeight());
         vistaCrear.setLocationRelativeTo(null);
         
+        //Establecerle los valores a los campos de la vista crear.
         createModel.setNombre(vistaCrear.campoNombre.getText());
         createModel.setApellido(vistaCrear.campoApellido.getText());
         createModel.setDireccion(vistaCrear.campoDireccion.getText());
