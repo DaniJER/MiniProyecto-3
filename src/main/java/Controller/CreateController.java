@@ -26,14 +26,21 @@ public class CreateController implements ActionListener {
         vistaPrincipal.Agregar.addActionListener(this);
     }
     public void iniciarVistaCrear(){
+        vistaPrincipal.setTitle("Gestion de usuarios");
+        vistaPrincipal.setLocationRelativeTo(null);
         vistaCrear.setTitle("Agregar Usuarios");
-        vistaCrear.setLocationRelativeTo(null);
+        //vistaCrear.setLocationRelativeTo(null);
         
     }
+    //Boton para las intrucciones del evento del boton "Crear".
     @Override
     public void actionPerformed(ActionEvent e) {
+        //Cerrar la ventana principal el programa y abrir la ventana para crear un usuario
         vistaPrincipal.dispose();
         vistaCrear.setVisible(true);
+        vistaCrear.setSize(vistaPrincipal.getWidth(), vistaPrincipal.getHeight());
+        vistaCrear.setLocationRelativeTo(null);
+        
         createModel.setNombre(vistaCrear.campoNombre.getText());
         createModel.setApellido(vistaCrear.campoApellido.getText());
         createModel.setDireccion(vistaCrear.campoDireccion.getText());
