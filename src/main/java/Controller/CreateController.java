@@ -19,8 +19,10 @@ public class CreateController implements ActionListener {
     private Create createModel;
     private CreateView vistaCrear;
 
-    public CreateController(PrincipalView vistaPrincipal, Create createModel) {
+    public CreateController(PrincipalView vistaPrincipal, Create createModel, CreateView vistaCrear) {
         this.vistaPrincipal = vistaPrincipal;
+        this.createModel = createModel;
+        this.vistaCrear = vistaCrear;
         vistaPrincipal.Agregar.addActionListener(this);
     }
     public void iniciarVistaCrear(){
@@ -30,6 +32,8 @@ public class CreateController implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
+        vistaPrincipal.dispose();
+        vistaCrear.setVisible(true);
         createModel.setNombre(vistaCrear.campoNombre.getText());
         createModel.setApellido(vistaCrear.campoApellido.getText());
         createModel.setDireccion(vistaCrear.campoDireccion.getText());
