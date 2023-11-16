@@ -14,7 +14,8 @@ import javax.swing.JOptionPane;
  *
  * @author El Rey
  */
-public class Create extends CreateController{
+public class Create{
+    
     private String nombre;
     private String apellido;
     private String nacimiento;
@@ -22,7 +23,7 @@ public class Create extends CreateController{
     private String direccion;
     private int id;
 
-    public Create(String nombre, String apellido, String nacimiento, int celular, String direccion, int id, PrincipalView vistaPrincipal) {
+   /* public Create(String nombre, String apellido, String nacimiento, int celular, String direccion, int id, PrincipalView vistaPrincipal) {
         super(vistaPrincipal);
         this.nombre = nombre;
         this.apellido = apellido;
@@ -30,9 +31,8 @@ public class Create extends CreateController{
         this.celular = celular;
         this.direccion = direccion;
         this.id = id;
-    }
-
-
+    }*/
+    
     public String getNombre() {
         return nombre;
     }

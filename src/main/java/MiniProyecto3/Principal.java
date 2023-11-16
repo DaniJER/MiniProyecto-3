@@ -4,7 +4,9 @@
  */
 package MiniProyecto3;
 
+import Controller.CreateController;
 import Controller.PrincipalController;
+import Model.Create;
 import View.PrincipalView;
 
 /**
@@ -14,6 +16,9 @@ import View.PrincipalView;
 public class Principal {
     public static void main(String[] args) {
     PrincipalView ventanaPrincipal = new PrincipalView();
-    PrincipalController controladorPrincipal = new PrincipalController(ventanaPrincipal);
+    Create modeloCrear = new Create();
+    CreateController controladorCrear = new CreateController(ventanaPrincipal, modeloCrear);
+    ventanaPrincipal.setVisible(true);
+    
     }
 }

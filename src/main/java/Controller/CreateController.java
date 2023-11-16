@@ -19,7 +19,7 @@ public class CreateController implements ActionListener {
     private Create createModel;
     private CreateView vistaCrear;
 
-    public CreateController(PrincipalView vistaPrincipal) {
+    public CreateController(PrincipalView vistaPrincipal, Create createModel) {
         this.vistaPrincipal = vistaPrincipal;
         vistaPrincipal.Agregar.addActionListener(this);
     }
