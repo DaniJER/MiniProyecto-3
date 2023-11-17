@@ -47,8 +47,8 @@ public class CreateController implements ActionListener {
         //Establecerle los valores a los campos de la vista crear.
         createModel.setNombre(vistaCrear.campoNombre.getText());
         createModel.setApellido(vistaCrear.campoApellido.getText());
-        createModel.setDireccion(vistaCrear.campoDireccion.getText());
-        createModel.setCelular(Integer.parseInt(vistaCrear.campoCelular.getText()));
+        createModel.setDireccion(vistaCrear.campoApellido.getText());
+        createModel.setCelular(Integer.parseInt(vistaCrear.campoApellido.getText()));
         createModel.setId(Integer.parseInt(vistaCrear.campoId.getText()));
         createModel.setNacimiento(vistaCrear.campoNacimiento.getText());
         //createModel.setNombre(vistaCrear.tipoUsuarioComboBox.getText());

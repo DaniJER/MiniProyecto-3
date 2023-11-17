@@ -32,20 +32,20 @@ public class CreateView extends javax.swing.JFrame {
         jTextField4 = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
         jTextField8 = new javax.swing.JTextField();
-        tipoUsuarioComboBox = new javax.swing.JComboBox<>();
-        campoNacimiento = new javax.swing.JTextField();
-        campoDireccion = new javax.swing.JTextField();
-        campoApellido = new javax.swing.JTextField();
+        campoTipoUsuario = new javax.swing.JComboBox<>();
         jTextField9 = new javax.swing.JTextField();
-        campoNombre = new javax.swing.JTextField();
-        campoTipoTel = new javax.swing.JTextField();
-        campoCelular = new javax.swing.JTextField();
-        campoId = new javax.swing.JTextField();
         jTextField14 = new javax.swing.JTextField();
         jTextField15 = new javax.swing.JTextField();
         jTextField16 = new javax.swing.JTextField();
         jTextField17 = new javax.swing.JTextField();
         botonEnviar = new javax.swing.JButton();
+        campoApellido = new javax.swing.JTextField();
+        campoId = new javax.swing.JTextField();
+        campoNombre = new javax.swing.JTextField();
+        campoTipoTel = new javax.swing.JComboBox<>();
+        campoCelular = new javax.swing.JTextField();
+        campoNacimiento = new javax.swing.JTextField();
+        campoDireccion = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -129,43 +129,19 @@ public class CreateView extends javax.swing.JFrame {
         jPanel1.add(jTextField8);
         jTextField8.setBounds(500, 190, 200, 54);
 
-        tipoUsuarioComboBox.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        tipoUsuarioComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Estudiante", "profesor", "empleado" }));
-        tipoUsuarioComboBox.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
-        tipoUsuarioComboBox.setMaximumSize(new java.awt.Dimension(0, 0));
-        tipoUsuarioComboBox.setMinimumSize(new java.awt.Dimension(0, 0));
-        tipoUsuarioComboBox.setPreferredSize(new java.awt.Dimension(0, 0));
-        tipoUsuarioComboBox.addActionListener(new java.awt.event.ActionListener() {
+        campoTipoUsuario.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        campoTipoUsuario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Estudiante", "profesor", "empleado" }));
+        campoTipoUsuario.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
+        campoTipoUsuario.setMaximumSize(new java.awt.Dimension(0, 0));
+        campoTipoUsuario.setMinimumSize(new java.awt.Dimension(0, 0));
+        campoTipoUsuario.setPreferredSize(new java.awt.Dimension(0, 0));
+        campoTipoUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tipoUsuarioComboBoxActionPerformed(evt);
+                campoTipoUsuarioActionPerformed(evt);
             }
         });
-        jPanel1.add(tipoUsuarioComboBox);
-        tipoUsuarioComboBox.setBounds(280, 200, 175, 40);
-
-        campoNacimiento.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        campoNacimiento.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
-        campoNacimiento.setMinimumSize(new java.awt.Dimension(0, 0));
-        campoNacimiento.setPreferredSize(new java.awt.Dimension(0, 0));
-        campoNacimiento.setRequestFocusEnabled(false);
-        jPanel1.add(campoNacimiento);
-        campoNacimiento.setBounds(280, 380, 175, 40);
-
-        campoDireccion.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        campoDireccion.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
-        campoDireccion.setMinimumSize(new java.awt.Dimension(0, 0));
-        campoDireccion.setPreferredSize(new java.awt.Dimension(0, 0));
-        campoDireccion.setRequestFocusEnabled(false);
-        jPanel1.add(campoDireccion);
-        campoDireccion.setBounds(720, 310, 175, 40);
-
-        campoApellido.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        campoApellido.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
-        campoApellido.setMinimumSize(new java.awt.Dimension(0, 0));
-        campoApellido.setPreferredSize(new java.awt.Dimension(0, 0));
-        campoApellido.setRequestFocusEnabled(false);
-        jPanel1.add(campoApellido);
-        campoApellido.setBounds(280, 320, 175, 40);
+        jPanel1.add(campoTipoUsuario);
+        campoTipoUsuario.setBounds(280, 200, 175, 40);
 
         jTextField9.setBackground(new java.awt.Color(196, 196, 196));
         jTextField9.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
@@ -180,38 +156,6 @@ public class CreateView extends javax.swing.JFrame {
         jTextField9.setPreferredSize(new java.awt.Dimension(0, 0));
         jPanel1.add(jTextField9);
         jTextField9.setBounds(60, 190, 180, 54);
-
-        campoNombre.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        campoNombre.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
-        campoNombre.setMinimumSize(new java.awt.Dimension(0, 0));
-        campoNombre.setPreferredSize(new java.awt.Dimension(0, 0));
-        campoNombre.setRequestFocusEnabled(false);
-        jPanel1.add(campoNombre);
-        campoNombre.setBounds(280, 270, 175, 40);
-
-        campoTipoTel.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        campoTipoTel.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
-        campoTipoTel.setMinimumSize(new java.awt.Dimension(0, 0));
-        campoTipoTel.setPreferredSize(new java.awt.Dimension(0, 0));
-        campoTipoTel.setRequestFocusEnabled(false);
-        jPanel1.add(campoTipoTel);
-        campoTipoTel.setBounds(720, 200, 175, 40);
-
-        campoCelular.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        campoCelular.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
-        campoCelular.setMinimumSize(new java.awt.Dimension(0, 0));
-        campoCelular.setPreferredSize(new java.awt.Dimension(0, 0));
-        campoCelular.setRequestFocusEnabled(false);
-        jPanel1.add(campoCelular);
-        campoCelular.setBounds(720, 260, 175, 40);
-
-        campoId.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        campoId.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.black, java.awt.Color.black));
-        campoId.setMinimumSize(new java.awt.Dimension(0, 0));
-        campoId.setPreferredSize(new java.awt.Dimension(0, 0));
-        campoId.setRequestFocusEnabled(false);
-        jPanel1.add(campoId);
-        campoId.setBounds(720, 380, 175, 40);
 
         jTextField14.setBackground(new java.awt.Color(196, 196, 196));
         jTextField14.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
@@ -290,6 +234,60 @@ public class CreateView extends javax.swing.JFrame {
         jPanel1.add(botonEnviar);
         botonEnviar.setBounds(400, 460, 170, 60);
 
+        campoApellido.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        campoApellido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoApellidoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(campoApellido);
+        campoApellido.setBounds(280, 320, 180, 40);
+
+        campoId.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        jPanel1.add(campoId);
+        campoId.setBounds(720, 380, 180, 40);
+
+        campoNombre.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        campoNombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoNombreActionPerformed(evt);
+            }
+        });
+        jPanel1.add(campoNombre);
+        campoNombre.setBounds(280, 260, 180, 40);
+
+        campoTipoTel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        campoTipoTel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        jPanel1.add(campoTipoTel);
+        campoTipoTel.setBounds(720, 200, 180, 40);
+
+        campoCelular.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        campoCelular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoCelularActionPerformed(evt);
+            }
+        });
+        jPanel1.add(campoCelular);
+        campoCelular.setBounds(720, 260, 180, 40);
+
+        campoNacimiento.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        campoNacimiento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoNacimientoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(campoNacimiento);
+        campoNacimiento.setBounds(280, 390, 180, 40);
+
+        campoDireccion.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        campoDireccion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                campoDireccionActionPerformed(evt);
+            }
+        });
+        jPanel1.add(campoDireccion);
+        campoDireccion.setBounds(720, 320, 180, 40);
+
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 950, 600);
 
@@ -304,9 +302,9 @@ public class CreateView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
 
-    private void tipoUsuarioComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tipoUsuarioComboBoxActionPerformed
+    private void campoTipoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoTipoUsuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tipoUsuarioComboBoxActionPerformed
+    }//GEN-LAST:event_campoTipoUsuarioActionPerformed
 
     private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
         // TODO add your handling code here:
@@ -323,6 +321,26 @@ public class CreateView extends javax.swing.JFrame {
     private void botonEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonEnviarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_botonEnviarActionPerformed
+
+    private void campoApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoApellidoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoApellidoActionPerformed
+
+    private void campoNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoNombreActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoNombreActionPerformed
+
+    private void campoCelularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoCelularActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoCelularActionPerformed
+
+    private void campoNacimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoNacimientoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoNacimientoActionPerformed
+
+    private void campoDireccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoDireccionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoDireccionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -367,7 +385,8 @@ public class CreateView extends javax.swing.JFrame {
     public javax.swing.JTextField campoId;
     public javax.swing.JTextField campoNacimiento;
     public javax.swing.JTextField campoNombre;
-    public javax.swing.JTextField campoTipoTel;
+    private javax.swing.JComboBox<String> campoTipoTel;
+    public javax.swing.JComboBox<String> campoTipoUsuario;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField14;
@@ -379,6 +398,5 @@ public class CreateView extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
-    public javax.swing.JComboBox<String> tipoUsuarioComboBox;
     // End of variables declaration//GEN-END:variables
 }
